@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Aug 15 20:48:41 2021
-
-@author: chrischen
-"""
-
 '''
 this code is borrowed from https://github.com/louis2889184/pytorch-adversarial-training/tree/master/cifar-10
 author: YI-LIN SUNG
