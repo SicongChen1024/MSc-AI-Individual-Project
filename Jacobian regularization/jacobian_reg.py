@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 24 20:13:06 2021
-
-@author: chrischen
-"""
 '''
 this code is borrowed from https://github.com/facebookresearch/jacobian_regularizer
 author: Facebook Research
