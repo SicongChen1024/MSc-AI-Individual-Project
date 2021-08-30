@@ -16,4 +16,4 @@ Thanks to Florian Tramer(MIT License Copyright (c) 2018 ftramer),
 Harry (MIT License Copyright (c) 2020 Harry Kim),
 Facebook Research(MIT License Copyright (c) Facebook, Inc. and its affiliates.) and
 YI-LIN SUNG,
-since some codes are borrowed or slightly modified (state explictly in the scripts) from their work.
+since part of codes in this repositry are borrowed or slightly modified (state explictly in the scripts) from their work.
