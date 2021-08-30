@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 24 17:31:59 2021
-
-@author: chrischen
-"""
-
 '''
 this code is borrowed from the library https://github.com/Harry24k/adversarial-attacks-pytorch
 author: Harry
