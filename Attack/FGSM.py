@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 '''
-this code is borrowed from https://github.com/Harry24k/adversarial-attacks-pytorch
+this code is borrowed from https://github.com/Harry24k/adversarial-attacks-pytorch except the min of the image is modified
 author: Harry
 '''
 
