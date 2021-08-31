@@ -161,12 +161,14 @@ def main():
     val_loader = DataLoader(val_dataset, batch_size=32, num_workers=4, shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=32, num_workers=4, shuffle=True)
     
+    '''
     #Standard training
     model_name = 'SqueezeNet.pt'
     model = SqueezeNet(version='1_1', num_classes=2)
     standard_lr = 9.28426850e-05
     standard_gamma = 0.90
     standard_model_training(model, model_name, train_loader, val_loader, test_loader, lr=standard_lr, gamma=standard_gamma)
+    '''
     
     #JR
     model_name = 'SqueezeNet.pt'
