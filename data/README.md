@@ -1,4 +1,4 @@
-The processed ad training tensor folder is [here](https://drive.google.com/drive/folders/1fvbS_J_wQFNsN8JEWmDjHCt0rkjXDiSq?usp=sharing) and image folder is [here](https://drive.google.com/drive/folders/1Kj45bFxxxTJgvX2tieg7g8QWHp426WH0?usp=sharing).
+The processed ad training tensor folder is [here](https://drive.google.com/drive/folders/1Kj45bFxxxTJgvX2tieg7g8QWHp426WH0?usp=sharing) and image folder is [here](https://drive.google.com/drive/folders/1fvbS_J_wQFNsN8JEWmDjHCt0rkjXDiSq?usp=sharing).
 
 Thanks to Hussain et.al for sharing their ad dataset in the paper [[1]](#1), the original images could be found [here](http://people.cs.pitt.edu/~kovashka/ads/#image).
 
