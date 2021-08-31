@@ -47,6 +47,31 @@ def check_accuracy(loader, model, attack, adv_test=False):
 
     return acc
 
+def check_accuracy_torchattack(loader, model, attack):
+    
+ 
+    num_correct = 0
+    num_samples = 0
+    model.eval()  # set model to evaluation mode
+    with torch.no_grad():
+        for x, y in loader:
+            x = x.to(device=device, dtype=dtype)  # move to device
+            y = y.to(device=device, dtype=torch.long)
+            
+            with torch.enable_grad():
+              adv_x = attack(x, y)
+              x = adv_x.detach()
+
+            scores = model(x)
+              
+            _, preds = scores.max(1)
+            num_correct += (preds == y).sum()
+            num_samples += preds.size(0)
+        acc = float(num_correct) / num_samples
+        print('Got %d / %d correct (%.2f)' % (num_correct, num_samples, 100 * acc))
+
+    return acc
+
 def check_acc_rand(loader, model_lst, attack, adv_test=False):
 
   num_correct = 0
