@@ -19,4 +19,4 @@ Thanks to
 * [Facebook Research](https://github.com/facebookresearch/jacobian_regularizer) (MIT License Copyright (c) Facebook, Inc. and its affiliates.)
 * [YI-LIN SUNG](https://github.com/louis2889184/pytorch-adversarial-training)
 
-since part of codes in this repositry are borrowed or slightly modified (state explictly in the scripts) from their work.
+since part of codes in this repositry are borrowed or modified (state explictly in the scripts) from their implementations.
