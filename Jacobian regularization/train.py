@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 24 20:14:55 2021
-
-@author: chrischen
-"""
+'''
+this code is modified from https://github.com/facebookresearch/jacobian_regularizer
+author: Facebook Research
+'''
 import torch
 import torch.nn as nn
 import torch.nn.init as init
