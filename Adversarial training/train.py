@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 24 17:43:58 2021
-
-@author: chrischen
-"""
+'''
+this code is modified from https://github.com/louis2889184/pytorch-adversarial-training
+author: YI-LIN SUNG
+'''
 import torch
 import torch.nn as nn
 import torch.nn.init as init
