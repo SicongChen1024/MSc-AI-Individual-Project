@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 '''
-this code is modified from https://github.com/facebookresearch/jacobian_regularizer
+part of this code is modified from https://github.com/facebookresearch/jacobian_regularizer
 author: Facebook Research
 '''
 import torch
