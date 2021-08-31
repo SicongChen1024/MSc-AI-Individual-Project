@@ -162,10 +162,12 @@ def main():
     val_loader = DataLoader(val_dataset, batch_size=32, num_workers=4, shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=32, num_workers=4, shuffle=True)
     
+    '''
     #Standard training
     standard_lr = 9.28426850e-05
     standard_gamma = 0.90
     standard_model_training(train_loader, val_loader, test_loader, lr=standard_lr, gamma=standard_gamma)
+    '''
     
     #Adversarial training
     adv_lr = 0.000375
