@@ -6,7 +6,7 @@ This repositry contains the implementations of my MSc AI Individual project: Def
 pip install -r requirements.txt
 ```
 ## Data
-The link to the processed ad dataset is included in data/README.md. The torch tensors should be loaded directly to produce experimental results, and the folder should be named 'Ad_training_tensors' placed under the 'data/' directory.
+The link to the processed ad dataset is included in data/README.md. The torch tensors should be loaded directly to conduct experiments, and the folder should be named 'Ad_training_tensors' placed under the 'data/' directory.
 ## Adversarial Training
 Change the directory to Adversarial_training and run
 ```
