@@ -148,7 +148,7 @@ def adv_model_training(train_loader, val_loader, test_loader, epsilon, alpha, k,
             _type='linf')
     print('Test acc')
     check_accuracy(test_loader, model, attack, adv_test=False)
-    print('Test acc adv ($\epsilon_{test}=4/255$)')
+    print('Test acc adv (ϵ_test=4/255)')
     check_accuracy(test_loader, model, attack, adv_test=True)
 
 def main():
