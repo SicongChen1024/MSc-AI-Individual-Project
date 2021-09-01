@@ -117,8 +117,8 @@ def train(model, model_name, train_loader, val_loader, attack, optimizer, schedu
         val_loss_lst.append(loss_avg)
         
 
-  if not os.path.exists('results'):
-    os.makedirs('results')
+  if not os.path.exists('../results'):
+        os.makedirs('../results')
   epoch_lst = list(range(epochs))
   plt.plot(epoch_lst, train_loss_lst, label='train')
   plt.plot(epoch_lst, val_loss_lst, label='val')
@@ -144,4 +144,4 @@ def train(model, model_name, train_loader, val_loader, attack, optimizer, schedu
     plt.xlabel('epoch')
     plt.ylabel('avg loss')
     plt.title('JR loss curve')
-    plt.savefig('results/jr_val_jrloss_only.png')
+    plt.savefig('../results/jr_val_jrloss_only.png')
