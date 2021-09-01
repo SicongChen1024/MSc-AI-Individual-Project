@@ -10,19 +10,19 @@ Change the directory to Adversarial_training and run
 ```
 python main.py
 ```
-to derive a sample SqueezeNet ad-classifier with adversarial training
+to derive a sample SqueezeNet ad-classifier with adversarial training.
 ## Jacobian Regularization
 Change the directory to Jacobian_regularization and run
 ```
 python main.py
 ```
-to derive a sample SqueezeNet ad-classifier with Jacobian regularization
+to derive a sample SqueezeNet ad-classifier with Jacobian regularization.
 ## Ensemble Ad-blockers
 Change the directory to Multiple_models and run
 ```
 python main.py
 ```
-to derive the results of conducting randomized and ensemble&randomized algorithms
+to derive the results of conducting randomized and ensemble&randomized algorithms.
 ## Acknowledgement
 Thanks to 
 
