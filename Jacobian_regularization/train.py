@@ -127,6 +127,7 @@ def train(model, model_name, train_loader, val_loader, attack, optimizer, schedu
   plt.title('Loss curve')
   plt.legend()
   plt.savefig('results/jr_train_val.png')
+  plt.show()
 
   
   if jacobian_reg:
@@ -139,9 +140,11 @@ def train(model, model_name, train_loader, val_loader, attack, optimizer, schedu
     plt.title('Validation loss curve')
     plt.legend()
     plt.savefig('results/jr_val_loss.png')
+    plt.show()
 
     plt.plot(epoch_lst, JR_loss_lst)
     plt.xlabel('epoch')
     plt.ylabel('avg loss')
     plt.title('JR loss curve')
     plt.savefig('../results/jr_val_jrloss_only.png')
+    plt.show()
