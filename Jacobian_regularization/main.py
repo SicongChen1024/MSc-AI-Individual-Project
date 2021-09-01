@@ -147,7 +147,7 @@ def jr_model_training(model, model_name, train_loader, val_loader, test_loader, 
     model.load_state_dict(torch.load(path + 'JR_' + str(lambda_JR) + '_' + model_name))
     print('Test acc')
     check_accuracy(test_loader, model, attack, adv_test=False)
-    print('Test acc adv ($\epsilon_{test}=4/255$)')
+    print('Test acc adv (ϵ_test=4/255)')
     check_accuracy(test_loader, model, attack, adv_test=True)
     
 def main():
