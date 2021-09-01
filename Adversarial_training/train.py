@@ -109,5 +109,6 @@ def train(model, train_loader, val_loader, optimizer, scheduler, path, epsilon=4
   plt.title('Loss curve')
   plt.legend()
   plt.savefig('../results/adv_train_val.png')
+  plt.show()
     
   return train_loss_lst, val_loss_lst
