@@ -231,6 +231,7 @@ def main():
     plt.title('Comparison of Randomized and Individual models')
     plt.legend()
     plt.savefig('../results/JR_randomized_individual.png')
+    plt.show()
     
     
     #Randomized adversarial training
@@ -327,6 +328,7 @@ def main():
     plt.title('Comparison of Randomized and Individual models')
     plt.legend()
     plt.savefig('../results/advtrain_randomized_individual.png')
+    plt.show()
     
     #Ensemble and Randomized
     ind_str = ['1', '2']
@@ -416,6 +418,7 @@ def main():
     plt.title('Comparison of models')
     plt.legend()
     plt.savefig('../results/JR_ensemble_randomized.png')
+    plt.show()
     
 if __name__ == "__main__":
     main()
