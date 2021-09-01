@@ -129,8 +129,8 @@ def main():
     test_loader = DataLoader(test_dataset, batch_size=32, num_workers=4, shuffle=True)
     
     path = '../weights/'
-    if not os.path.exists('results'):
-        os.makedirs('results')
+    if not os.path.exists('../results'):
+        os.makedirs('../results')
     #Randomized JR
     ind_str = ['1', '2']
     lambda_JR = 15
@@ -230,7 +230,7 @@ def main():
     plt.ylabel('accuracy')
     plt.title('Comparison of Randomized and Individual models')
     plt.legend()
-    plt.savefig('results/JR_randomized_individual.png')
+    plt.savefig('../results/JR_randomized_individual.png')
     
     
     #Randomized adversarial training
@@ -326,7 +326,7 @@ def main():
     plt.ylabel('accuracy')
     plt.title('Comparison of Randomized and Individual models')
     plt.legend()
-    plt.savefig('results/advtrain_randomized_individual.png')
+    plt.savefig('../results/advtrain_randomized_individual.png')
     
     #Ensemble and Randomized
     ind_str = ['1', '2']
@@ -415,5 +415,8 @@ def main():
     plt.ylabel('accuracy')
     plt.title('Comparison of models')
     plt.legend()
-    plt.savefig('results/JR_ensemble_randomized.png')
+    plt.savefig('../results/JR_ensemble_randomized.png')
+    
+if __name__ == "__main__":
+    main()
 
