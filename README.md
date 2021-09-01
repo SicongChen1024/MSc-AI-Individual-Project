@@ -6,11 +6,23 @@ This repositry contains code to produce results in my MSc AI Individual project:
 pip install -r requirements.txt
 ```
 ## Adversarial Training
-Run main.py in Adversarial training to derive a sample SqueezeNet model with adversarial training
+Change the directory to Adversarial_training and run
+```
+python main.py
+```
+to derive a sample SqueezeNet ad-classifier with adversarial training
 ## Jacobian Regularization
-Run main.py in Jacobian regularization to derive a sample SqueezeNet model with Jacobian regularization
+Change the directory to Jacobian_regularization and run
+```
+python main.py
+```
+to derive a sample SqueezeNet ad-classifier with Jacobian regularization
 ## Ensemble Ad-blockers
-Run main.py in multiple models to derive the results of conducting randomized and ensemble&randomized algorithms
+Change the directory to Multiple_models and run
+```
+python main.py
+```
+to derive the results of conducting randomized and ensemble&randomized algorithms
 ## Acknowledgement
 Thanks to 
 
