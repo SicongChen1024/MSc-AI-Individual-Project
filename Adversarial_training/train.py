@@ -99,8 +99,8 @@ def train(model, train_loader, val_loader, optimizer, scheduler, path, epsilon=4
             torch.save(model.state_dict(), path + 'standard_SqueezeNet.pt')
         val_loss_lst.append(avg_val_loss)
 
-  if not os.path.exists('results'):
-    os.makedirs('results')
+  if not os.path.exists('../results'):
+        os.makedirs('../results')
   epoch_lst = list(range(epochs))
   plt.plot(epoch_lst, train_loss_lst, label='train')
   plt.plot(epoch_lst, val_loss_lst, label='val')
@@ -108,5 +108,6 @@ def train(model, train_loader, val_loader, optimizer, scheduler, path, epsilon=4
   plt.ylabel('avg loss')
   plt.title('Loss curve')
   plt.legend()
-  plt.savefig('results/adv_train_val.png')
+  plt.savefig('../results/adv_train_val.png')
+    
   return train_loss_lst, val_loss_lst
