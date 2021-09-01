@@ -126,7 +126,7 @@ def train(model, model_name, train_loader, val_loader, attack, optimizer, schedu
   plt.ylabel('avg loss')
   plt.title('Loss curve')
   plt.legend()
-  plt.savefig('results/jr_train_val.png')
+  plt.savefig('../results/jr_train_val.png')
   plt.show()
 
   
@@ -139,7 +139,7 @@ def train(model, model_name, train_loader, val_loader, attack, optimizer, schedu
     plt.ylabel('avg loss')
     plt.title('Validation loss curve')
     plt.legend()
-    plt.savefig('results/jr_val_loss.png')
+    plt.savefig('../results/jr_val_loss.png')
     plt.show()
 
     plt.plot(epoch_lst, JR_loss_lst)
