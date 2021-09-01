@@ -1,5 +1,5 @@
 # MSc-AI-Individual-Project
-This repositry contains code to produce results in my MSc AI Individual project: Defending Against Adversarial Attacks on Perceptual Ad-blockers
+This repositry contains the implementations of my MSc AI Individual project: Defending Against Adversarial Attacks on Perceptual Ad-blockers
 
 ## Installation
 ```
