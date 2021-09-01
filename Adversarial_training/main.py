@@ -175,7 +175,7 @@ def main():
     epsilon_train = 4/255
     alpha_train = epsilon_train/2
     k_train = 10
-    adv_model_training(train_loader, val_loader, test_loader, epsilon=epsilon_train, alpha=alpha_train, k=k_train, lr=adv_lr, gamma=adv_gamma)
+    adv_model_training(train_loader, val_loader, test_loader, epsilon=epsilon_train, alpha=alpha_train, k=k_train, lr=adv_lr, gamma=adv_gamma, epochs=30)
     
 
 if __name__ == "__main__":
