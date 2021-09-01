@@ -7,6 +7,7 @@ Created on Thu Aug 26 21:19:52 2021
 """
 import glob
 import sys
+import os
 import torch
 import numpy as np
 from torch.utils.data.dataset import Dataset
@@ -128,6 +129,8 @@ def main():
     test_loader = DataLoader(test_dataset, batch_size=32, num_workers=4, shuffle=True)
     
     path = '../weights/'
+    if not os.path.exists('results'):
+        os.makedirs('results')
     #Randomized JR
     ind_str = ['1', '2']
     lambda_JR = 15
@@ -155,8 +158,6 @@ def main():
       model = model.to(device=device)
       diff_model_lst.append(model)
     
-    
-    print(len(model_lst))
     
     epsilon_x_axis = np.array(list(range(17)))*1/255
     x_values = []
@@ -229,7 +230,7 @@ def main():
     plt.ylabel('accuracy')
     plt.title('Comparison of Randomized and Individual models')
     plt.legend()
-    plt.show()
+    plt.savefig('results/JR_randomized_individual.png')
     
     
     #Randomized adversarial training
@@ -325,7 +326,7 @@ def main():
     plt.ylabel('accuracy')
     plt.title('Comparison of Randomized and Individual models')
     plt.legend()
-    plt.show()
+    plt.savefig('results/advtrain_randomized_individual.png')
     
     #Ensemble and Randomized
     ind_str = ['1', '2']
@@ -414,5 +415,5 @@ def main():
     plt.ylabel('accuracy')
     plt.title('Comparison of models')
     plt.legend()
-    plt.show()
+    plt.savefig('results/JR_ensemble_randomized.png')
 
